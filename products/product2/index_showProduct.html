@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: "ChiayiCity";
+        src: local("../../fonts/ChiayiCitywoff") format("woff"),
+          local("../../fonts/ChiayiCity.ttf") format("truetype"),
+          local("../../fonts/ChiayiCity.eot") format("embedded-opentype");
+      }
+      body {
+        font-family: "ChiayiCity", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .card {
+        display: grid;
+        grid-template-columns: 250px;
+        grid-template-rows: 340px 165px 45px;
+        grid-template-areas: "image" "text" "stats";
+
+        border-radius: 18px;
+        background: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+        text-align: center;
+        width: 250px;
+      }
+      .card-image {
+        grid-area: image;
+      }
+      .card-text {
+        grid-area: text;
+      }
+      .card-stats {
+        grid-area: stats;
+      }
+      .card-image {
+        grid-area: image;
+        background: url("p1.png");
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        background-size: cover;
+      }
+      .card-text {
+        grid-area: text;
+        margin-top: -10px;
+      }
+      .card-text .date {
+        background: linear-gradient(90deg, #65fdf0, #1d6fa3);
+        font-size: 0.8rem;
+        margin: 0;
+      }
+      .card-text p {
+        display: block;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-align: left;
+        margin-top: -15px;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      .card-text h2 {
+        margin-top: 0px;
+        font-size: 1.2rem;
+        color: black;
+      }
+      .card-stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background: linear-gradient(90deg, #65fdf0, #1d6fa3);
+      }
+      .card-stats .stat {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 0.8rem;
+        font-family: "ChiayiCity", "Times New Roman", Times, serif;
+        color: white;
+        padding: 5px;
+      }
+      .card:hover {
+        transform: scale(1.15);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+      }
+      .card {
+        transition: 0.5s ease;
+        cursor: pointer;
+        margin: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-image"></div>
+        <div class="card-text">
+          <span class="date">BodyGo</span>
+          <h2>銀髮體適能評估</h2>
+          <p>
+            測試項目:<br />握力測試、上肢柔軟度、下肢柔軟度、上肢肌耐力、下肢肌耐力、2.44m繞物、心肺適能。<br />
+            使用光學影像辨識，毫米級測距，系統含地墊、藍芽握力器、內建國建署常模。
+          </p>
+        </div>
+        <div class="card-stats">
+          <div class="stat">
+            <!-- <div class="value">4<sup>m</sup></div> -->
+            <div class="value">雲端</div>
+            <div class="type">報告</div>
+          </div>
+          <div class="stat border">
+            <div class="value">LINE</div>
+            <div class="type">登入</div>
+          </div>
+          <div class="stat">
+            <div class="value">1.5*2.8公尺</div>
+            <div class="type">需求空間</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
