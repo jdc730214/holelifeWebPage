@@ -1,18 +1,18 @@
 // var content = document.getElementsByClassName(".content");
 // content.style.width = width;
 
-var container = document.getElementsByClassName("container");
-var tabs = document.getElementsByClassName("tabs");
+// var container = document.getElementsByClassName("container");
+// var tabs = document.getElementsByClassName("tabs");
 
-//alert(container[0].offsetWidth);
-document.getElementById("content").style.width =
-  container[0].offsetWidth / 1.5 + "px";
-tabs[0].style.marginLeft = container[0].offsetWidth / 10 + "px";
+// //alert(container[0].offsetWidth);
+// document.getElementById("content").style.width =
+//   container[0].offsetWidth / 1.5 + "px";
+// tabs[0].style.marginLeft = container[0].offsetWidth / 10 + "px";
 
-const onresize = (dom_elem, callback) => {
-  const resizeObserver = new ResizeObserver(() => callback());
-  resizeObserver.observe(dom_elem);
-};
+// const onresize = (dom_elem, callback) => {
+//   const resizeObserver = new ResizeObserver(() => callback());
+//   resizeObserver.observe(dom_elem);
+// };
 
 // function setWidth() {
 //   var container = document.getElementsByClassName("container");
@@ -24,15 +24,15 @@ const onresize = (dom_elem, callback) => {
 //   tabs[0].style.marginLeft =
 //     tabs[0].style.marginLeft - container[0].offsetWidth / 4 + "px";
 // }
-onresize(container[0], function () {
-  var container = document.getElementsByClassName("container");
-  var tabs = document.getElementsByClassName("tabs");
+// onresize(container[0], function () {
+//   var container = document.getElementsByClassName("container");
+//   var tabs = document.getElementsByClassName("tabs");
 
-  document.getElementById("content").style.width =
-    container[0].offsetWidth / 1.5 + "px";
-  tabs[0].style.marginLeft = container[0].offsetWidth / 10 + "px";
-  //   tabs[0].style.marginLeft = container[0].offsetWidth / 4 + "px";
-});
+//   document.getElementById("content").style.width =
+//     container[0].offsetWidth / 1.5 + "px";
+//   tabs[0].style.marginLeft = container[0].offsetWidth / 10 + "px";
+//   //   tabs[0].style.marginLeft = container[0].offsetWidth / 4 + "px";
+// });
 
 // content[0].style.width = container[0].offsetWidth;
 // div[0].addEventListener("resize", (event) => alert(div[0].width));
