@@ -22,9 +22,10 @@ body {
   font-weight: 400;
   font-style: normal;
   color: white;
+  overflow-x: hidden;
 }
 .header {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -116,7 +117,7 @@ body {
   background: var(--columbia-blue);
   color: black;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   border-top: 10px solid transparent;
   border-image: linear-gradient(90deg, #65fdf0, #1d6fa3);
   border-image-slice: 1;
@@ -338,7 +339,7 @@ body {
 .main2 {
   /* background-color: #3e74ae; */
   background: var(--columbia-blue);
-  width: 100%;
+  width: 100vw;
   height: 100%;
   color: black;
   border-bottom: 10px solid transparent;
@@ -364,18 +365,22 @@ body {
   /* background-color: #3e74ae; */
   background: var(--columbia-blue);
   color: black;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 .main3 .contact {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 .main3 .contact iframe {
-  width: 100%;
-  height: 600px;
+  overflow: hidden;
+
+  width: 100vw;
+  height: 100vh;
   border: none;
-  background-color: black;
+  margin-right: 20px;
 }
 /* contact1使用 */
 /* 
